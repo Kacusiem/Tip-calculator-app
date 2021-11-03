@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator app</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type='image/png' sizes='32x32' href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="style/mobile.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="space-for-title"> 
+            <img src="images/logo.svg" alt="logo-SPLITTER">
+        </div>
+
+        <section>
+            <div class="calculator">
+                <div class="space-to-calculate">
+                    <div class="space-for-bill">
+                        <p class="name-bill">Bill</p>
+                        <div class="input-for-bill">
+                            <input  id="bill" class="input-bill input-bill-and-people" type="text" placeholder="0" >
+                        </div>
+                    </div>
+                    <div class="select-tip">
+                        <p class="name-tip">Select Tip %</p>
+                        <div class="space-for-button-tip">
+                            <button type="button" id="button5" class="btn">5%</button>
+                            <button type="button" id=button10 class="btn">10%</button>
+                            <button type="button" id="button15" class="btn">15%</button>
+                            <button type="button" id="button25" class="btn">25%</button>
+                            <button type="button" id="button50" class="btn">50%</button>
+                            <button type="button" id=button-custom class="btn btn-other-color">Custom</button>
+                        </div>
+                    </div>
+                    <div class="space-for-people">
+                        <p class="name-people">Number of People</p>
+                        <div class="input-for-people">
+                            <input id="people" class="input-people input-bill-and-people" type="text" placeholder="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="space-to-display">
+                    <div class="tip-amount-space">
+                        <div class="tip-amount-person">
+                            <p class="name-amount">Tip Amount</p>
+                            <p class="per-person">/ person</p>
+                        </div>
+                        <div class="tip-amount">
+                            <p class="price">$0.00</p>
+                        </div>
+                    </div>
+                    <div class="total-amount-bill">
+                        <div class="amount-bill-person">
+                            <p class="name-amount">Total</p>
+                            <p class="per-person">/ person</p>
+                        </div>
+                        <div class="total-bill">
+                            <p class="price">$0.00</p>
+                        </div>
+                    </div>
+                    <div class="space-for-button">
+                        <button type="button" id="reset-button" class="reset-button">RESET</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
