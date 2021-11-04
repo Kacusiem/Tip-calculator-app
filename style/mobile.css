@@ -1,61 +1,58 @@
 @media screen and (max-width: 767px) {
+  section {
+    width: 80% !important;
+  }
 
-    section {
-        width: 80% !important;
-    }
+  .calculator {
+    display: block !important;
+  }
 
-    .calculator {
-        display: block !important;
-    }
+  .space-to-calculate {
+    width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
 
-    .space-to-calculate {
-        width: 100% !important;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-    }
-    
-    .space-to-display {
-        width: 87% !important;
-    }
+  .space-to-display {
+    width: 87% !important;
+  }
 
-    .space-for-button-tip {
-        margin-bottom: 0xp !important;
-    }
+  .space-for-button-tip {
+    margin-bottom: 0xp !important;
+  }
 
+  .input-for-bill,
+  .input-for-people {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
-    .input-for-bill, .input-for-people {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    
+  .space-for-button-tip {
+    text-align: center;
+  }
 
-    .space-for-button-tip {
-        text-align: center;
-    }
+  .btn, .btnx {
+    width: 40% !important;
+  }
 
-    .btn {
-        width: 40% !important;
-    }
+  .price {
+    font-size: 30px !important;
+    padding-right: 0px !important;
+  }
 
+  .name-amount,
+  .per-person {
+    padding-left: 0px !important;
+  }
 
-    .price {
-        font-size: 30px !important;
-        padding-right: 0px !important;
-    }
-
-    .name-amount, .per-person {
-        padding-left: 0px !important;
-    }
-
-    .reset-button {
-        width: 100% !important;
-    }
-
+  .reset-button {
+    width: 100% !important;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 860px) {
-    section {
-        width: 700px !important;
-    }
+  section {
+    width: 700px !important;
+  }
 }

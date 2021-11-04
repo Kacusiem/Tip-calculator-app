@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     display: flex;
@@ -19,7 +18,7 @@ section {
     margin: 0 auto !important;
     margin-bottom: 40px !important; 
     position: relative !important;
-}
+} 
 
 .space-for-title {
     display: flex;
@@ -48,6 +47,7 @@ section {
 
 .name-bill, .name-people {
     margin-bottom: 5px; 
+    display: flex;
 }
 
 .name-bill, .name-people, .name-tip {
@@ -93,7 +93,7 @@ section {
     margin-bottom: 30px;
 }
 
-.btn {
+.btn, .btnx {
     width: 30%;
     height:40px;
     margin-bottom: 10px;
@@ -161,4 +161,35 @@ section {
     border: none;
     background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
+}
+
+.btn:hover, .input-bill-and-people:hover, .reset-button:hover {
+    cursor: pointer;
+}  
+
+.btnx {
+    text-align: center;
+}
+
+.btn-clicked {
+    background-color: #9fe8df;
+    color:hsl(183, 100%, 15%);
+}
+
+p.style-string {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    color: red;
+    font-family: inherit;
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+.description-style {
+    font-size: 11px;
+}
+
+p#title-people {
+    display: block;
 }

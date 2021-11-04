@@ -20,26 +20,30 @@
             <div class="calculator">
                 <div class="space-to-calculate">
                     <div class="space-for-bill">
-                        <p class="name-bill">Bill</p>
+                        <p id="title-bill" class="name-bill">Bill</p>
                         <div class="input-for-bill">
-                            <input  id="bill" class="input-bill input-bill-and-people" type="text" placeholder="0" >
+                            <input id="bill" class="input-bill input-bill-and-people" type="number" min="1" placeholder="0" value="">
                         </div>
                     </div>
                     <div class="select-tip">
                         <p class="name-tip">Select Tip %</p>
                         <div class="space-for-button-tip">
-                            <button type="button" id="button5" class="btn">5%</button>
-                            <button type="button" id=button10 class="btn">10%</button>
-                            <button type="button" id="button15" class="btn">15%</button>
-                            <button type="button" id="button25" class="btn">25%</button>
-                            <button type="button" id="button50" class="btn">50%</button>
-                            <button type="button" id=button-custom class="btn btn-other-color">Custom</button>
+                            <button value=0.05 type="button" id="button5" class="btn" disabled>5%</button>
+                            <button value=0.1 type="button" id=button10 class="btn" disabled>10%</button>
+                            <button value=0.15 type="button" id="button15" class="btn" disabled>15%</button>
+                            <button value=0.25 type="button" id="button25" class="btn" disabled>25%</button>
+                            <button value=0.5 type="button" id="button50" class="btn" disabled>50%</button>
+                            <button id=button-custom class="btn btnx btn-other-color" disabled>Without</>
                         </div>
                     </div>
                     <div class="space-for-people">
-                        <p class="name-people">Number of People</p>
+                        <p id="title-people" class="name-people">Number of People 
+                            <span class="description-style">
+                                (If you don't choose number of people, default value is 1.)
+                            </span>
+                            </p>
                         <div class="input-for-people">
-                            <input id="people" class="input-people input-bill-and-people" type="text" placeholder="0">
+                            <input id="people" class="input-people input-bill-and-people" type="number" placeholder="0">
                         </div>
                     </div>
                 </div>
@@ -50,7 +54,7 @@
                             <p class="per-person">/ person</p>
                         </div>
                         <div class="tip-amount">
-                            <p class="price">$0.00</p>
+                            <p id="tip-per-person" class="price">$0.00</p>
                         </div>
                     </div>
                     <div class="total-amount-bill">
@@ -59,7 +63,7 @@
                             <p class="per-person">/ person</p>
                         </div>
                         <div class="total-bill">
-                            <p class="price">$0.00</p>
+                            <p id="bill-per-person" class="price">$0.00</p>
                         </div>
                     </div>
                     <div class="space-for-button">
@@ -70,4 +74,5 @@
         </section>
     </div>
 </body>
+<script src="app.js"></script>
 </html>
