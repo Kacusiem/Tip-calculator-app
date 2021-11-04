@@ -59,7 +59,7 @@ const resetInputsAndResults = () => {
     tipButtons.forEach((item) => {
         item.disabled = "true";
         item.style.backgroundColor = "hsl(183, 100%, 15%)";
-        item.style.color = "#FFF";
+        item.style.color = "#FFFFFF";
         
     });
 
