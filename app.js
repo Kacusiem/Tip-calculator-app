@@ -6,7 +6,6 @@ const amountTipPerPerson = document.getElementById('tip-per-person');
 const amountBillPerPerson = document.getElementById('bill-per-person');
 const TitleBill = document.getElementById('title-bill');
 const TitlePeople = document.getElementById('title-people');
-const customButton = document.getElementById('button-custom');
 const p1 = document.createElement('p');
 p1.classList.add('style-string');
 const p2 = document.createElement('p');
@@ -18,9 +17,7 @@ inputBill.addEventListener("blur", (e) => {
     if(inputBill.value === "") {
         p1.innerText = "Can't be empty";
         TitleBill.appendChild(p1);
-        tipButtons.forEach((item) => {
-            item.disabled = "true";
-        });
+
     } else {
         p1.innerText = "";
         tipButtons.forEach((item) => {
@@ -59,6 +56,13 @@ const resetInputsAndResults = () => {
     inputPeople.value = "";
     amountTipPerPerson.innerHTML = "$0.00";
     amountBillPerPerson.innerHTML = "$0.00";
+    tipButtons.forEach((item) => {
+        item.disabled = "true";
+        item.style.backgroundColor = "hsl(183, 100%, 15%)";
+        item.style.color = "#FFF";
+        
+    });
+
 }
             
 resetButton.addEventListener('click', resetInputsAndResults);

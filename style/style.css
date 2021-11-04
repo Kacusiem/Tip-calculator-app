@@ -163,7 +163,7 @@ section {
     color: hsl(183, 100%, 15%);
 }
 
-.btn:hover, .input-bill-and-people:hover, .reset-button:hover {
+.btn:hover, .input-bill-and-people:hover, .reset-button:hover, .btnx:hover {
     cursor: pointer;
 }  
 
